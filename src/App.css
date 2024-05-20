@@ -1,0 +1,308 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Login.css */
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Add styles for modal and login form elements as needed */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+/* Add more styles as needed */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(33, 84, 68, 0.516);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black; /* Set the background color of the container */
+  border-color: black;
+  width: 393px;
+}
+
+.login-logo {
+  max-width: 200px;
+  max-height: 300px;
+  background-color: black;
+}
+
+.input-field {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  background-color: black;
+  color: yellow;
+  font-size: 16px;
+  outline: none;
+  margin-top: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.input-container input {
+  border-color: yellow;
+  border-radius: 20px;
+  padding: 10px 15px;
+  background-color: black;
+  color: yellow;
+  font-size: 16px;
+  outline: none;
+  outline-color: yellow;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Add styles for the bottom bar */
+.bottom-bar {/* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /* padding: 10px; */
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 393px;
+  height: 84px;
+  /* border-radius: 69px; */
+  padding: 13px;
+background-blend-mode: hard-ligh;
+background-color: black;
+border-top: 1px solid rgba(255, 255, 255, 0.08);
+backdrop-filter: blur(16px);
+  
+}
+.spinner{
+  height: 22px;
+  width: 22px;
+  color: yellow;
+}
+
+.bottom-item2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center both icon and text vertically */
+  gap: 5px; /* Adjust the gap between icon and text */
+  width: 156.5px;
+  height: 41px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.icon-white {
+  color: white;
+}
+
+.icon-text {
+  color: white;
+  font-size: 0.8em; /* Adjust font size as needed */
+  text-align: center; /* Center the text */
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 420px; /* Set width to match the specified size */
+  height: 852px; /* Set height to match the specified size */
+  margin: auto; /* Center horizontally */
+}
+/* 
+.search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 7px 8px; 
+  background: rgba(118, 118, 128, 0.24);
+  width: 325px;
+  height: 36px;
+  border-radius: 10px;
+} */
+
+.top-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 16px;
+  width: 393px;
+  height: 60px;
+}
+
+.search-container input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 7px 8px; 
+  background: rgba(118, 118, 128, 0.24);
+  width: 325px;
+  height: 36px;
+  border-radius: 10px;
+}
+
+.plus-sign {
+  color: yellow;
+  width: 36px; 
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: (221, 192, 106, 1);
+padding-right: 10PX;
+}
+
+.card-container {
+  width: 420px; /* Set width to match the specified size */
+}
+
+.card {
+  flex-direction: row;
+  position: relative;
+  background-color: black;
+  color: white;
+  font-style: italic;
+  font-size: 24px;
+  padding: 16px 24px 16px 16px;
+  width: 372px; /* Set width to match the specified size */
+  height: 58px; /* Set height to match the specified size */
+  border-bottom: 1px solid white; /* Apply border */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 26px;
+  background: rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card-content {
+  width: 325px; 
+}
+
+.arrow {
+  width: 20px; /* Set width to match the specified size */
+  height: 20px; /* Set height to match the specified size */
+  border-top: 1.5px solid transparent; /* Set border */
+  border-bottom: 1.5px solid transparent; /* Set border */
+}
+/* App.css */
+.arrow {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.down {
+  transform: rotate(90deg);
+}
+.icon-arrow{
+  color: yellow;
+}

@@ -1,0 +1,28 @@
+.monster {
+    position: absolute;
+    width: 393px;
+    height: 852px;
+    left: calc(50% - 393px/2);
+    top: calc(50% - 852px/2);
+    background: #141414;
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    z-index: 0;
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+}
+
+.img1 {
+    display: flex;
+    position: absolute;
+    width: 393px;
+    height: 648px;
+    left: 0px;
+    top: 120px;
+    background-size: contain; /* or 'cover' based on your requirement */
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+    border: color(black);
+}
+

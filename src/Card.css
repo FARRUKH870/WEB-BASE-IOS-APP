@@ -1,0 +1,148 @@
+/* Normalize basic styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey; /* Set background color to light gray */
+  height: 100vh; /* Ensure the body takes full viewport height */
+}
+
+/* Container for the card detail section */
+.custom-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 393px;
+  background-color: black; /* Black background color */
+  padding: 24px 16px;
+  box-sizing: border-box;
+}
+
+/* Card Creator title */
+.custom-card-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white; /* Set title text color to white */
+}
+
+/* Card details section */
+.custom-card-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Individual card detail elements (label and input) */
+.custom-card-info label {
+  font-weight: bold;
+  margin-bottom: 5px; /* Margin between label and input */
+  color: white; /* Set label text color to white */
+}
+
+.custom-card-input {
+  border: 1px solid #ccc; /* Border for input and select elements */
+  padding: 8px; /* Padding for input and select elements */
+  font-size: 16px; /* Font size for input and select elements */
+  border-radius: 5px; /* Rounded corners for input and select elements */
+  margin-bottom: 10px;
+  color: black; /* Set input text color to black */
+}
+
+/* Button row */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Back button */
+.back-button {
+  display: flex;
+  align-items: center;
+  background: none; /* No background for button */
+  border: none; /* No border for button */
+  cursor: pointer; /* Indicate clickable behavior */
+  color: #333; /* Dark gray text color */
+}
+
+.back-button:hover,
+.back-button.pressed {
+  color: #ccad52; /* Hover color for button text and chevron */
+}
+
+.back-text {
+  margin-right: 0.5rem; /* Spacing between text and icon */
+}
+
+/* Save button */
+.save-button {
+  background-color: #4caf50; /* Green background color for save button */
+  color: white; /* White text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding */
+  font-size: 16px; /* Font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.save-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Custom button */
+.custom-button {
+  background: rgba(118, 118, 128, 0.24);
+  border-radius: 9px;
+  color: white;
+  padding: 10px 20px;
+  margin-right: 5px; /* Adjust margin if needed */
+  cursor: pointer;
+}
+
+.custom-button.active {
+  background-color: yellow;
+}
+
+/* Hover effect */
+.custom-button:hover {
+  background-color: yellow; /* Change color on hover */
+}
+
+.custom-card-title{
+  color: white;
+}
+
+.tier-container{
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap to next line if needed */
+  justify-content: center; /* Center buttons horizontally */
+  gap: 16px; /* Space between buttons */
+  width: 393px; /* Adjust width to fit the container */
+  color: white;
+}
+
+/* Styling for tier buttons */
+.tier-button {
+  background-color: #e6e6e6;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  display: inline-block;
+}
+
+.tier-button:hover {
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tier-button.active {
+  background-color: yellow;
+}
+
+.tier-button:hover {
+  background-color: yellow; /* Change color on hover */
+}
