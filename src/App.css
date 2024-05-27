@@ -260,12 +260,9 @@ backdrop-filter: blur(16px);
   background: (221, 192, 106, 1);
 padding-right: 10PX;
 }
-
 .card-container {
   width: 420px; /* Set width to match the specified size */
 }
-
-
 .card {
   flex-direction: row;
   position: relative;
@@ -275,14 +272,13 @@ padding-right: 10PX;
   font-size: 24px;
   width: 400px;
   padding: 16px 24px 16px 16px;
-  width: 372px; /* Set width to match the specified size */
-  height: 58px; /* Set height to match the specified size */
-  border-bottom: 1px solid white; /* Apply border */
+  width: 372px; 
+  height: 58px; 
+  border-bottom: 1px solid white; 
   display: flex;
   justify-content: space-between;
   align-items: center;
   line-height: 26px;
-  background: rgba(255, 255, 255, 0.04);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 

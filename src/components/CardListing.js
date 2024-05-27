@@ -1,20 +1,52 @@
-import React, { useState } from 'react';
-import '../App.css'; // Import your stylesheet
-import Buttom from './Buttom';
+import React, { useState } from "react";
+import "../App.css"; // Import your stylesheet
+import Buttom from "./Buttom";
 import { IoChevronForwardOutline } from "react-icons/io5";
 import { IoAddOutline } from "react-icons/io5";
 
 const CardListing = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const [cardItems, setCardItems] = useState([
-    { title: 'Airknight Parshath', description: 'This is the first card.', showDescription: false },
-    { title: 'Amazoness Chain Warrior', description: 'This is the second card.', showDescription: false },
-    { title: 'Archfiend Soldier', description: 'This is the third card.', showDescription: false },
-    { title: 'Asura Priest', description: 'This is the fourth card.', showDescription: false },
-    { title: 'Book of Moon', description: 'This is the fourth card.', showDescription: false },
-    { title: 'Bottomless Trap Hole', description: 'This is the fourth card.', showDescription: false },
-    { title: 'Brain Control', description: 'This is the fourth card.', showDescription: false },
-    { title: 'Call of the haunted', description: 'This is the fifth card.', showDescription: false },
+    {
+      title: "Airknight Parshath",
+      description: "This is the first card.",
+      showDescription: false,
+    },
+    {
+      title: "Amazoness Chain Warrior",
+      description: "This is the second card.",
+      showDescription: false,
+    },
+    {
+      title: "Archfiend Soldier",
+      description: "This is the third card.",
+      showDescription: false,
+    },
+    {
+      title: "Asura Priest",
+      description: "This is the fourth card.",
+      showDescription: false,
+    },
+    {
+      title: "Book of Moon",
+      description: "This is the fourth card.",
+      showDescription: false,
+    },
+    {
+      title: "Bottomless Trap Hole",
+      description: "This is the fourth card.",
+      showDescription: false,
+    },
+    {
+      title: "Brain Control",
+      description: "This is the fourth card.",
+      showDescription: false,
+    },
+    {
+      title: "Call of the haunted",
+      description: "This is the fifth card.",
+      showDescription: false,
+    },
   ]);
 
   const filteredItems = cardItems.filter((item) =>
@@ -22,11 +54,20 @@ const CardListing = () => {
   );
 
   const addCard = () => {
-    const newCardTitle = prompt('Enter the title for the new card:');
+    const newCardTitle = prompt("Enter the title for the new card:");
     if (newCardTitle) {
-      const newCardDescription = prompt('Enter the description for the new card:');
+      const newCardDescription = prompt(
+        "Enter the description for the new card:"
+      );
       if (newCardDescription) {
-        setCardItems([...cardItems, { title: newCardTitle, description: newCardDescription, showDescription: false }]);
+        setCardItems([
+          ...cardItems,
+          {
+            title: newCardTitle,
+            description: newCardDescription,
+            showDescription: false,
+          },
+        ]);
       }
     }
   };
@@ -39,20 +80,17 @@ const CardListing = () => {
 
   return (
     <div className="container">
-      <div className='top-box'>
-      </div>
+      <div className="top-box"></div>
       <div className="card-container">
         {filteredItems.map((item, index) => (
           <div key={index} className="card">
-            
-              <h3>{item.title}</h3>
-              <span><IoChevronForwardOutline className='icon-arrow' /></span>
-
-
-
+            <h3>{item.title}</h3>
+            <span>
+              <IoChevronForwardOutline className="icon-arrow" />
+            </span>
           </div>
         ))}
-      </div>      
+      </div>
     </div>
   );
 };
