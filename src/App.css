@@ -265,13 +265,15 @@ padding-right: 10PX;
   width: 420px; /* Set width to match the specified size */
 }
 
+
 .card {
   flex-direction: row;
   position: relative;
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0.04);
   color: white;
-  font-style: italic;
+  font-family: 'Artbrush', sans-serif;
   font-size: 24px;
+  width: 400px;
   padding: 16px 24px 16px 16px;
   width: 372px; /* Set width to match the specified size */
   height: 58px; /* Set height to match the specified size */
@@ -305,4 +307,8 @@ padding-right: 10PX;
 }
 .icon-arrow{
   color: yellow;
+}
+@font-face {
+  font-family: 'Artbrush';
+  src: url('../src/Artbrush.ttf') format('truetype'); /* Adjust the path as necessary */
 }
