@@ -176,6 +176,19 @@ background-blend-mode: hard-light;
 border-top: 1px solid rgba(255, 255, 255, 0.08);
 backdrop-filter: blur(16px);
 }
+
+.champions-header {
+  margin: 0 auto;
+  text-align: center;
+font-family: 'SF UI Text';
+font-style: normal;
+font-weight: 500;
+font-size: 21px;
+line-height: 22px;
+color: #FFFFFF;
+flex: none;
+
+}
 .spinner {
   height: 22px;
   width: 22px;
