@@ -80,17 +80,31 @@ const CardListing = () => {
 
   return (
     <div className="container">
-      <div className="top-box"></div>
+      <div className="top-box">
+        <div className="search-container">
+          <input
+            type="text"
+            placeholder="Search"
+            className="input-field"
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </div>
+        <div className="plus-sign">
+          <IoAddOutline size={80} />
+        </div>
+      </div>
       <div className="card-container">
         {filteredItems.map((item, index) => (
           <div key={index} className="card">
             <h3>{item.title}</h3>
+
             <span>
               <IoChevronForwardOutline className="icon-arrow" />
             </span>
           </div>
         ))}
       </div>
+      <Buttom />
     </div>
   );
 };
