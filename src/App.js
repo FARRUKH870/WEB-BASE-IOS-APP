@@ -47,7 +47,7 @@ function App() {
           <Route path="/CardForm" element={<CardForm />} />
          <Route path="/buttom" element={<Buttom />} />
          <Route path="/CardCreator" element={<CardCreator/>}/>
-         <Route path='/ChampinTab' element={<ChampiontTab/>}/>
+         <Route path='/ChampiontTab' element={<ChampiontTab/>}/>
          <Route path='/Champions' element={<Champions/>}/>
        </Routes>
     </Router>
