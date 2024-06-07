@@ -1,3 +1,12 @@
+#root {
+  max-width: 465px;
+  max-height: 1008px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .App {
   text-align: center;
 }
@@ -14,7 +23,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #060707;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -65,22 +74,6 @@ input[type="password"] {
   border-radius: 5px;
 }
 
-button {
-  width: 100%;
-  padding: 10px;
-  font-size: 18px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-/* Add styles for modal and login form elements as needed */
 .App {
   text-align: center;
   padding: 20px;
@@ -99,7 +92,7 @@ button:hover {
 body {
   margin: 0;
   padding: 0;
-  background-color: rgba(33, 84, 68, 0.516);
+  background-color: black;
   overflow: hidden;
   cursor: pointer;
 }
@@ -157,24 +150,20 @@ body {
   align-items: center;
 }
 
-/* Add styles for the bottom bar */
 .bottom-bar {
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  /* padding: 10px; */
-  width: 100%;
   position: fixed;
   bottom: 0;
-  width: 393px;
-  height: 84px;
-  /* border-radius: 69px; */
+  width: 440px;
+  padding: 0px 0px 0px 0px;
+  height: 50px;
   padding: 13px;
- background: rgba(0, 0, 0, 0.5);
-background-blend-mode: hard-light;
-border-top: 1px solid rgba(255, 255, 255, 0.08);
-backdrop-filter: blur(16px);
+   background: rgba(0, 0, 0, 0.5);
+  background-blend-mode: hard-light;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
 }
 
 .champions-header {
@@ -199,56 +188,66 @@ flex: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Center both icon and text vertically */
-  gap: 5px; /* Adjust the gap between icon and text */
+  gap: 7px; /* Adjust the gap between icon and text */
   width: 156.5px;
+  padding: 0px 55px;
   height: 41px;
-  flex: none;
   order: 0;
   flex-grow: 1;
 }
 
 .icon-white {
   color: white;
+  width: 22px;
+  height: 22px;
 }
 
 .icon-text {
   color: white;
-  font-size: 0.8em; /* Adjust font size as needed */
-  text-align: center; /* Center the text */
+  font-size: 10px;
+  font-weight: 510;
+line-height: 12px;
+ width: 44px;
+ height: 12px;
+  text-align: center;
+  text-decoration: none; 
+  font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: black;
-  color: white;
-  width: 420px; /* Set width to match the specified size */
-  height: 852px; /* Set height to match the specified size */
+  background-color: #000000;
+  width: 465px; /* Set width to match the specified size */
+  height: 1008px; /* Set height to match the specified size */
   margin: auto; /* Center horizontally */
 }
-/* 
+
 .search-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 7px 8px; 
-  background: rgba(118, 118, 128, 0.24);
+  padding: 7px 8px 30px 8px; 
   width: 325px;
   height: 36px;
   border-radius: 10px;
-} */
+}
 
 .top-box {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 0px 0px;
   gap: 16px;
-  width: 393px;
-  height: 60px;
+  width: 465px;
+  top: 0;
+  height: 81px;
+  position: fixed;
+  /* background-color: black; */
+  backdrop-filter: blur(16px);
+  /* position: relative; */
 }
 
 .search-container input {
@@ -256,14 +255,15 @@ flex: none;
   flex-direction: row;
   align-items: center;
   padding: 7px 8px;
-  background: rgba(118, 118, 128, 0.24);
+  background: rgba(255, 255, 255, .080);
   width: 325px;
   height: 36px;
   border-radius: 10px;
 }
 
 .plus-sign {
-  color: yellow;
+  color: rgba(221, 192, 106, 1);
+
   width: 36px;
   height: 36px;
   display: flex;
@@ -273,35 +273,71 @@ flex: none;
   padding-right: 10px;
 }
 .card-container {
-  width: 420px; /* Set width to match the specified size */
+  width: 465px; 
+  padding-top: 50%;
+  overflow-y: auto;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge *//* Set width to match the specified size */
 }
+
+.card-container .card:hover .description {
+  display: none !important;
+}
+
+/* App.css */
+
+/* Other styles */
+
 .card {
   flex-direction: row;
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.04);
+  background-color: rgba(255, 255, 255, .080);
   color: white;
   font-family: "Artbrush", sans-serif;
+  letter-spacing: 1px;
   font-size: 24px;
-  width: 400px;
-  padding: 16px 24px 16px 16px;
-  width: 372px;
-  height: 58px;
-  border-bottom: 1px solid white;
+  /* font-weight: 400; */
+  line-height: 16px;
+  width: 465px;
+  padding: 16px 24px 16px 0PX;
+  /* height: px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  line-height: 26px;
+  max-height:min-content;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow-y: auto;
+}
+.card-title{
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  font-size: 24px;
+  padding-left: 20px;
+  line-height: 26.03px;
 }
 .card-content {
   width: 325px;
 }
+
 .arrow {
   width: 20px; /* Set width to match the specified size */
   height: 20px; /* Set height to match the specified size */
   border-top: 1.5px solid transparent; /* Set border */
   border-bottom: 1.5px solid transparent; /* Set border */
 }
+
+/* Remove hover effect */
+.card:hover .description {
+  display: none !important;
+}
+
+.icon-arrow {
+  color: rgba(221, 192, 106, 1);
+  width: 32px;
+  height: 64px;
+  margin: 0 auto;
+
+}
+
 /* App.css */
 .arrow {
   font-size: 20px;
@@ -310,9 +346,6 @@ flex: none;
 
 .down {
   transform: rotate(90deg);
-}
-.icon-arrow {
-  color: yellow;
 }
 @font-face {
   font-family: "Artbrush";

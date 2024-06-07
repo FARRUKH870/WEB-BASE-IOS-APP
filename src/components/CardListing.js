@@ -10,42 +10,66 @@ const CardListing = () => {
     {
       title: "Airknight Parshath",
       description: "This is the first card.",
-      showDescription: false,
     },
     {
       title: "Amazoness Chain Warrior",
       description: "This is the second card.",
-      showDescription: false,
     },
     {
       title: "Archfiend Soldier",
       description: "This is the third card.",
-      showDescription: false,
     },
     {
       title: "Asura Priest",
       description: "This is the fourth card.",
-      showDescription: false,
     },
     {
       title: "Book of Moon",
       description: "This is the fourth card.",
-      showDescription: false,
     },
     {
       title: "Bottomless Trap Hole",
       description: "This is the fourth card.",
-      showDescription: false,
     },
     {
       title: "Brain Control",
       description: "This is the fourth card.",
-      showDescription: false,
     },
     {
       title: "Call of the haunted",
       description: "This is the fifth card.",
-      showDescription: false,
+    },
+    {
+      title: "Airknight Parshath",
+      description: "This is the first card.",
+    },
+    {
+      title: "Amazoness Chain Warrior",
+      description: "This is the second card.",
+    },
+    {
+      title: "Archfiend Soldier",
+      description: "This is the third card.",
+    },
+    {
+      title: "Asura Priest",
+      description: "This is the fourth card.",
+    },
+    {
+      title: "Book of Moon",
+      description: "This is the fourth card.",
+    },
+    {
+      title: "Bottomless Trap Hole",
+      description: "This is the fourth card.",
+    },
+    {
+      title: "Brain Control",
+      description: "This is the fourth card.",
+    },
+    {
+      title: "Call of the haunted",
+      description: "This is the fifth card.",
     },
   ]);
 
@@ -65,17 +89,10 @@ const CardListing = () => {
           {
             title: newCardTitle,
             description: newCardDescription,
-            showDescription: false,
           },
         ]);
       }
     }
-  };
-
-  const toggleDescription = (index) => {
-    const newCardItems = [...cardItems];
-    newCardItems[index].showDescription = !newCardItems[index].showDescription;
-    setCardItems(newCardItems);
   };
 
   return (
@@ -89,15 +106,14 @@ const CardListing = () => {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
-        <div className="plus-sign">
+        <div className="plus-sign" onClick={addCard}>
           <IoAddOutline size={80} />
         </div>
       </div>
       <div className="card-container">
         {filteredItems.map((item, index) => (
           <div key={index} className="card">
-            <h3>{item.title}</h3>
-
+            <h3 className="card-title">{item.title}</h3>
             <span>
               <IoChevronForwardOutline className="icon-arrow" />
             </span>
